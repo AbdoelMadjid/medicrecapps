@@ -4,7 +4,7 @@
   <div class="box col-md-12">
     <div class="box-inner">
       <div class="well" data-original-title="">
-        <h2><i class="glyphicon glyphicon-edit"></i> Form Pengguna  <?php if(isset($edit)){ echo'<span class="label label-info">Edit</span>';} ?> </h2>
+        <h2><i class="glyphicon glyphicon-edit"></i> Form Registrasi Pengguna  <?php if(isset($edit)){ echo'<span class="label label-info">Edit</span>';} ?> </h2>
         <!--
           <div class="box-icon">
               <a href="<?php echo base_url(); ?>#" class="btn btn-setting btn-round btn-default"><i
@@ -72,20 +72,18 @@
             <input type="text"  name="username" class="form-control" id="text" value="<?php if(isset($username)) echo $username; ?>"   placeholder="Masukkan Username" style="width:400px" >
 			<?php if(isset($errusername)){ echo'<p><font color="red">Username belum diisi</font></p>'; }?>
 		  </div>
-          <?php if(isset($edit)){
-            echo'
-            <div class="form-group">
-                              <label for="exampleInputPassword1">Recent Password</label>
-                              <input type="password" name="recpassword" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width:400px">
-							  
-                          </div>';
-            
-            }?>
+         
           <div class="form-group">
             <label for="exampleInputPassword1">New Password</label>
             <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width:400px">
 			<?php if(isset($errpassword)){ echo'<p><font color="red">Password belum diisi</font></p>'; }?>
           </div>
+		  <div class="form-group">
+                              <label for="exampleInputPassword1">Konfirmasi  Password</label>
+                              <input type="password" name="confirmpassword" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width:400px">
+							  
+            </div>
+						  
           <label for="exampleInputEmail1">Peran</label>
 		  <?php if(isset($errperan)){ echo'<p><font color="red">Peran belum diisi</font></p>'; }?>
           <div class="radio">

@@ -17,9 +17,6 @@ class Homepage extends CI_Controller
 			'form',
 			'url'
 		));
-		$this->load->model('aktivitas_model');
-		$this->load->model('metode_aktivitas_model');
-		$this->load->model('profesi_model');
 		$this->load->library('session');
 		if ($this->session->userdata('username') == NULL)
 			{
@@ -27,15 +24,21 @@ class Homepage extends CI_Controller
 			// redirect('login');
 
 			}
+		$this->load->model('user_model');
 		}
 
 	public function index()
 		{
+			
+			
 		//$isi['pesan']="Load Data Berhasil";
 		$data['header'] = $this->load->view('backend/header');
 		$data['menu_kiri'] = $this->load->view('backend/menu_kiri');
 		$isi['pesan']=$this->session->flashdata('pesan');
-		$isi['isi'] = $this->aktivitas_model->get_data_aktivitas();
+		$isi['user'] = $this->user_model->get_data_user()->num_rows();
+		$isi['user_request'] = $this->user_model->get_data_user_request()->num_rows();
+		
+		
 		$data['content'] = $this->load->view('backend/homepage', $isi);
 		$this->load->view('/backend/main', $data);
 		}

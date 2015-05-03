@@ -16,7 +16,7 @@
         ===
     -->
     <meta charset="utf-8">
-    <title>Aplikasi Use Case Point Cost Estimation</title>
+    <title>Aplikasi  Rekam Medik Pasien</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
     <meta name="author" content="Muhammad Usman">
@@ -48,7 +48,7 @@
     <![endif]-->
 
     <!-- The fav icon -->
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>img/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>img/happy_tooth_small.png">
 
 </head>
 
@@ -64,8 +64,8 @@
                 <span class="icon-bar"></span>
             </button>
 			<center>
-            <a class="navbar-brand" href="<?php echo base_url(); ?>index.html"> <img alt="Charisma Logo" src="<?php echo base_url(); ?>img/logo20.png" class="hidden-xs"/>
-                <span>Administrator Aplikasi UCP</span></a>
+            <a class="navbar-brand" href="<?php echo base_url(); ?>index.html"> <img alt="Logo gigi " src="<?php echo base_url(); ?>img/happy_tooth_small.png" class="hidden-xs"/>
+                <span>Administrator Aplikasi Rekam Medik Pasien</span></a>
 </center>
             <!-- user dropdown starts -->
             <div class="btn-group pull-right">
@@ -76,7 +76,7 @@
                 <ul class="dropdown-menu">
                     <li><a href="<?php echo base_url(); ?>#">Profile</a></li>
                     <li class="divider"></li>
-                    <li><a href="<?php echo base_url(); ?>login.html">Logout</a></li>
+                    <li><a href="<?php echo base_url(); ?>/login/logout">Logout</a></li>
                 </ul>
             </div>
             <!-- user dropdown ends -->

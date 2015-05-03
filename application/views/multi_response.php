@@ -67,10 +67,10 @@
 <body>
 
 <div id="container">
-	<h1>Welcome to TechnoPoetic's CodeIgniter test lab!</h1>
+	<h1>CodeIgniter chained dropdowns</h1>
 
 	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter. This site is a lab area for <a href="http://technopoetic.com">TechnoPoetic</a> where I test new ideas and serve examples of tips and techniques from my blog.</p>
+		<p>Way to go!  You submitted the form.  Now what do you wanna do?</p>
 
 	</div>
 
