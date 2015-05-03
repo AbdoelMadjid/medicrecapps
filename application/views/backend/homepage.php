@@ -10,12 +10,12 @@
     </div>
 
     <div class="col-md-3 col-sm-3 col-xs-6">
-        <a data-toggle="tooltip" title="" class="well top-block" href="<? echo base_url();?>user/daftar_request_pengguna" data-original-title="<?php echo $user_request; ?> Request Data Pasien Baru.">
+        <a data-toggle="tooltip" title="" class="well top-block" href="<? echo base_url();?>pasien/daftar_pasien" data-original-title="<?php echo $user_request; ?> Request Data Pasien Baru.">
             <i class="glyphicon glyphicon-star green"></i>
 
             <div>Total Data Pasien</div>
-            <div>228</div>
-            <span class="notification red">4</span>
+            <div><?php echo $pasien; ?></div>
+            <span class="notification red"><?php echo $pasien_request; ?></span>
         </a>
     </div>
 

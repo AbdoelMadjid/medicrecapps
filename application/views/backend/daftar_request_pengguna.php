@@ -124,7 +124,7 @@ function PopupCenterDual(url, title, w, h) {
             
 			</a>
 			
-			 <a class="btn btn-success"  onclick="return confirm('Anda Yakin untuk Menyutujui <?php echo $row->nama_lengkap; ?> ?')"  href="<?php echo base_url(); ?>user/delete/<?php echo $row->id_user;?> "> 
+			 <a class="btn btn-success"  onclick="return confirm('Anda Yakin untuk Menyutujui <?php echo $row->nama_lengkap; ?> ?')"  href="<?php echo base_url(); ?>user/validate/<?php echo $row->id_user;?> "> 
                 <i class="glyphicon glyphicon-ok-sign icon-white"></i> 
                 Setujui
             

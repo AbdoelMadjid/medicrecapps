@@ -25,6 +25,17 @@ class Pasien_model extends CI_Model {
 		
 	}
 	
+	function get_data_pasien_request(){
+		//Select table name
+		$this->db->select("*");
+		$this->db->from('pasien');
+		
+		$query = $this->db->get();
+		return $query;
+		
+		
+	}
+	
 	
 	
 	

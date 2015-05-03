@@ -25,6 +25,7 @@ class Homepage extends CI_Controller
 
 			}
 		$this->load->model('user_model');
+		$this->load->model('pasien_model');
 		}
 
 	public function index()
@@ -37,6 +38,8 @@ class Homepage extends CI_Controller
 		$isi['pesan']=$this->session->flashdata('pesan');
 		$isi['user'] = $this->user_model->get_data_user()->num_rows();
 		$isi['user_request'] = $this->user_model->get_data_user_request()->num_rows();
+		$isi['pasien'] = $this->pasien_model->get_data_pasien()->num_rows();
+		$isi['pasien_request'] = $this->pasien_model->get_data_pasien_request()->num_rows();
 		
 		
 		$data['content'] = $this->load->view('backend/homepage', $isi);

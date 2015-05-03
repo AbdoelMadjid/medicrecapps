@@ -441,7 +441,18 @@ class User extends CI_Controller
 		$this->session->set_flashdata('pesan', 'Data Berhasil diperbaharui');
 		redirect('user/daftar_pengguna');
 		}
-
+ function validate($id_aplikasi){
+	 
+	 $data = array(
+			
+			'status' => 1,
+			
+		);
+	 $this->user_model->update($data, $id_aplikasi);
+	 $this->session->set_flashdata('pesan', 'validasi berhasil dilakukan');
+	 
+	 redirect('user/daftar_request_pengguna');
+ }
 	// fungsi ini digunakan untuk melakukan penghapusan terhadap data user
 
 	public function delete($id)
